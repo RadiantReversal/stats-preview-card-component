@@ -28,6 +28,8 @@ main {
             display: flex;
             overflow: hidden;
             flex-direction: row-reverse;
+            border-radius: 8px;
+            box-shadow: -1px 6px 16px 7px hsl(0deg 0% 0% / 29%);
         }
 }
 
@@ -68,4 +70,52 @@ p {
 
 span {
     color: $Background;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: smaller;
+
+        a {
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+        
+        span {
+            color: white;
+        }
+
+        a:hover {
+            color: $Background;
+        }
+}
+
+@media (max-width: 768px) {
+    main .card {
+        flex-direction: column;
+        width: 343px;
+        height: 759px;
+    }
+
+    .text {
+        text-align: center;
+        width: unset;
+    }
+
+    .text-2 {
+    display: flex;
+    padding-top: 30px;
+    padding-right: 40px;
+    flex-direction: column;
+    gap: 33px;
+    }
+
+    img {
+        padding-bottom: 24px;
+    }
 }
