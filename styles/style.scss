@@ -100,6 +100,7 @@ footer {
         flex-direction: column;
         width: 343px;
         height: 759px;
+        margin-top: 130px;
     }
 
     .text {
@@ -117,5 +118,9 @@ footer {
 
     img {
         padding-bottom: 24px;
+    }
+
+    footer {
+        bottom: -168px;
     }
 }
