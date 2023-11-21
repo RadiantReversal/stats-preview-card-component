@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
-$Background: hsl(199, 80%, 4%);
-$Card: hsl(208, 49%, 17%);
-$Accent: hsl(204, 66%, 30%);
+$Background: #57ac91;
+$Card: #242226;
 
 * {
     margin: 0;
@@ -13,6 +12,7 @@ $Accent: hsl(204, 66%, 30%);
 
 body {
     background-color: $Background;
+    font-family: 'Inter', sans-serif;
 }
 
 main {
@@ -22,8 +22,50 @@ main {
     transform: translate(-50%, -50%);
 
         .card {
-            width: 810px;
+            width: 1010px;
             height: 420px;
             background-color: $Card;
+            display: flex;
+            overflow: hidden;
+            flex-direction: row-reverse;
         }
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 485px;
+}
+
+.text-2 {
+    display: flex;
+    padding-top: 30px;
+    padding-right: 188px;
+
+        ul {
+            list-style-type: none;
+            font-family: 'Lexend Deca', sans-serif;
+            color: hsl(0, 0%, 100%);
+        }
+}
+
+.list-item {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+h1 {
+    font-size: 1.3em;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+span {
+    color: $Background;
 }

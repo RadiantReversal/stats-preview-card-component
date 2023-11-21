@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: hsl(199, 80%, 4%);
+  background-color: #57ac91;
+  font-family: "Inter", sans-serif;
 }
 
 main {
@@ -14,7 +15,48 @@ main {
   transform: translate(-50%, -50%);
 }
 main .card {
-  width: 810px;
+  width: 1010px;
   height: 420px;
-  background-color: hsl(208, 49%, 17%);
+  background-color: #242226;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row-reverse;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  width: 485px;
+}
+
+.text-2 {
+  display: flex;
+  padding-top: 30px;
+  padding-right: 188px;
+}
+.text-2 ul {
+  list-style-type: none;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+.list-item {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+h1 {
+  font-size: 1.3em;
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+span {
+  color: #57ac91;
 }
