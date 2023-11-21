@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+$Background: hsl(199, 80%, 4%);
+$Card: hsl(208, 49%, 17%);
+$Accent: hsl(204, 66%, 30%);
+
+* {
+    margin: 0;
+}
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'Lexend Deca', sans-serif;
+
+body {
+    background-color: $Background;
+}
+
+main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+        .card {
+            width: 810px;
+            height: 420px;
+            background-color: $Card;
+        }
+}
