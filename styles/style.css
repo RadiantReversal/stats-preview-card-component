@@ -6,13 +6,16 @@
 body {
   background-color: #57ac91;
   font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
 main .card {
   width: 1010px;
@@ -64,12 +67,9 @@ span {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: smaller;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 footer a {
   text-decoration: none;
@@ -88,7 +88,6 @@ footer a:hover {
     flex-direction: column;
     width: 343px;
     height: 759px;
-    margin-top: 130px;
   }
   .text {
     text-align: center;
@@ -104,7 +103,4 @@ footer a:hover {
   img {
     padding-bottom: 24px;
   }
-  footer {
-    bottom: -168px;
-  }
-}
+}/*# sourceMappingURL=style.css.map */
